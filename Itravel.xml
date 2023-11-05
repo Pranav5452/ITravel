@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="iTravel">
+	<listeners>
+		<listener class-name="net.focltng.helper.Listeners" />
+		<listener
+			class-name="net.focltng.config.AnnotationTransformer" />
+	</listeners>
+	<test parallel="methods" thread-count="1" name="parallelPOC">
+		<classes>
+			<class name="net.focltng.testcases.Promotions.Promotions_T004">
+				<methods>
+					<exclude
+						name="Promotions_VerifyDiscountOnBookingCruiseOnB2E_TC001" />
+					<exclude
+						name="Promotions_VerifyDiscountOnBookingCruiseOnB2EBehalfB2B_TC002" />
+					<exclude
+						name="Promotions_VerifyDiscountOnBookingCruiseOnB2B_TC003" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.Promotions.Promotions_T010">
+				<methods>
+					<exclude name="Promotions_RestrictedPromo_Cruise_TC001" />
+					<exclude name="Promotions_RestrictedPromo_Cruise_TC002" />
+					<exclude name="Promotions_RestrictedPromo_Cruise_TC003" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.Promotions.Promotions_T011">
+				<methods>
+					<exclude
+						name="Promotions_VerifyDrinkPackageFlyCruiseB2E_TC001" />
+					<exclude
+						name="Promotions_VerifyDrinkPackageFlyCruiseB2EAgency_TC002" />
+					<exclude
+						name="Promotions_VerifyDrinkPackageFlyCruiseB2B_TC003" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.Promotions.Promotions_T015">
+				<methods>
+					<exclude
+						name="Promotions_CombinablePromosFlyCruiseB2E_TC001" />
+					<exclude
+						name="Promotions_CombinablePromosFlyCruiseB2EAgency_TC002" />
+					<exclude
+						name="Promotions_CombinablePromosFlyCruiseB2B_TC003" />
+				</methods>
+			</class>
+			<class
+				name="net.focltng.testcases.LandPackages.LandPackages_T004">
+				<methods>
+					<exclude name="LandPackages_TransferAsStandalone_B2E_TC001" />
+					<exclude name="LandPackages_TransferAsStandalone_B2B_TC002" />
+					<exclude
+						name="LandPackages_TransferAsStandalone_B2EAgency_TC003" />
+					<exclude name="LandPackages_TransferAsStandalone_B2E_TC004" />
+					<exclude name="LandPackages_TransferAsStandalone_B2B_TC005" />
+					<exclude
+						name="LandPackages_TransferAsStandalone_B2EAgency_TC006" />
+					<exclude name="LandPackages_TransferAsOptional_B2E_TC007" />
+					<exclude name="LandPackages_TransferAsOptional_B2B_TC008" />
+					<exclude
+						name="LandPackages_TransferAsOptional_B2EAgency_TC009" />
+				</methods>
+			</class>
+			<class
+				name="net.focltng.testcases.LandPackages.LandPackages_T001">
+				<methods>
+					<include
+						name="LandPackages_ExtendingNightsWithPreLandPackages_B2E_TC001" />
+					<include
+						name="LandPackages_ReducingNightsWithPreLandPackages_B2EOnAgency_TC002" />
+					<include
+						name="LandPackages_ExtendingNightsWithPostLandPackages_B2B_TC005" />
+					<exclude
+						name="LandPackages_ExtendingNightsWithPreLandPackages_B2B_TC003" />
+					<exclude
+						name="LandPackages_ReducingNightsWithPostLandPackages_B2EOnAgency_TC004" />
+					<exclude
+						name="LandPackages_ReducingNightsWithPostLandPackages_B2E_TC006" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

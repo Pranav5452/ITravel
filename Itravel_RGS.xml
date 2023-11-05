@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="iTravel">
+	<listeners>
+		<listener class-name="net.focltng.helper.Listeners" />
+		<listener class-name="net.focltng.config.AnnotationTransformer" />
+	</listeners>
+	<test parallel="methods" thread-count="1" name="parallelPOC">
+		<classes>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T001">
+				<methods>
+					<include name="SellingApp_CabinOccupancyOfThreeOrMoreBeds_B2EAgency_TC006" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T002">
+				<methods>
+					<include name="SellingApp_TwinBedAndCotFacility_B2E_TC045" />
+					<include name="SellingApp_TwinBedAndCotFacility_B2E_TC046" />
+					<include name="SellingApp_TwinBedAndCotFacility_B2EAgency_TC047" />
+					<include name="SellingApp_TwinBedAndCotFacility_B2E_TC048" />
+					<include name="SellingApp_MultiFacilities_B2E_TC049" />
+					<include name="SellingApp_TwinBedAndCotFacility_B2B_TC098" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T003">
+				<methods>
+					<include name="SellingApp_Booking_B2E_TC009" />
+					<include name="SellingApp_AddingAdult_B2E_TC010" />
+					<include name="SellingApp_AddingAdult_B2E_TC011" />
+					<include name="SellingApp_AddingAdult_B2EAgency_TC044" />
+					<include name="SellingApp_AddingAdult_B2B_TC051" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T004">
+				<methods>
+					<include name="SellingApp_Cruise_AddDining_B2E_TC024" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T005">
+				<methods>
+					<include name="SellingApp_SpecialDietRemarksOnCartPage_B2E_TC001" />
+					<include name="SellingApp_SpecialDietRemarksOnCartPage_B2B_TC002" />
+					<include name="SellingApp_SpecialDietRemarksOnCartPage_B2EAgency_TC003" />
+					<include name="SellingApp_SpecialDietRemarksOnConfirmationPage_B2E_TC004" />
+					<include name="SellingApp_SpecialDietRemarksFromRecentBooking_B2EAgency_TC005" />
+					<include name="SellingApp_SpecialDietRemarksFromRecentBooking_B2B_TC006" />
+					<include name="SellingApp_SpecialDietRemarksAndMeetingChef_B2E_TC007" />
+					<include name="SellingApp_SpecialDietRemarksAndMeetingChef_B2B_TC008" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T006">
+				<methods>
+					<include name="SellingApp_AmendDocumentInformation_B2E_TC003" />
+					<include name="SellingApp_AmendInsuranceInformation_B2E_TC004" />
+					<include name="SellingApp_AmendMailingAddress_B2E_TC009" />
+					<include name="SellingApp_AmendDocumentInformation_B2B_TC012" />
+					<include name="SellingApp_AmendInsuranceInformation_B2B_TC013" />
+					<include name="AmendMailingAddress_B2B_TC018" />
+					<include name="SellingApp_AmendPaxInfo_B2E_TC001" />
+					<include name="SellingApp_AmendPaxInfo_B2B_TC010" />
+					<include name="SellingApp_AmendAdditionalInformation_B2E_TC002" />
+					<include name="SellingApp_AmendAdditionalInformation_B2B_TC011" />
+					<include name="SellingApp_AmendPermanentAddress_B2E_TC007" />
+					<include name="SellingApp_AmendPermanentAddress_B2B_TC016" />
+					<include name="SellingApp_AmendBuisnessAddress_B2E_TC008" />
+					<include name="SellingApp_AmendBuisnessAddress_B2B_TC017" />
+					<include name="SellingApp_AmendLoyaltyInformation_B2E_TC005" />
+					<include name="SellingApp_AmendLoyaltyInformation_B2B_TC014" />
+					<include name="SellingApp_AmendEmergencyContact_B2E_TC006" />
+					<include name="SellingApp_AmendEmergencyContact_B2B_TC015" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T008">
+				<methods>
+					<include name="SellingApp_AdvancedSearchWithRateClassificationB2E_TC021" />
+					<include name="SellingApp_AdvancedSearchWithCategoryclassB2E_TC012" />
+					<include name="SellingApp_AdvancedSearchWithCabinFacilityB2E_TC014" />
+					<include name="SellingApp_AdvancedSearchWithCabinCatagoryB2E_TC015" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T011">
+				<methods>
+					<include name="SellingApp_RetrieveBookingByPassengersName_B2E_TC001" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T017">
+				<methods>
+					<include name="SellingApp_Cruise_BedConfiguration_B2E_TC001" />
+					<include name="SellingApp_Cruise_BedConfiguration_B2B_TC003" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T018">
+				<methods>
+					<include name="SellingApp_Cruise_Facilities_B2E_TC049" />
+					<include name="SellingApp_Cruise_Facilities_B2E_TC003" />
+					<include name="SellingApp_Cruise_Facilities_B2E_TC004" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T019">
+				<methods>
+					<include name="SellingApp_Cruise_Facilities_B2E_TC001" />
+					<include name="SellingApp_Cruise_Facilities_B2E_TC002" />
+					<include name="SellingApp_Cruise_Facilities_B2E_TC050" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T020">
+				<methods>
+					<include name="SellingApp_Cruise_Dining_B2E_TC023" />
+					<include name="SellingApp_Cruise_Dining_B2E_TC025" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T022">
+				<methods>
+					<include name="SellingApp_NewFITBooking_DrinkAddition_B2E_TC001" />
+					<include name="SellingApp_NewFITBooking_DrinkAddition_B2E_TC002" />
+					<include name="SellingApp_NewFITBooking_DrinkAddition_B2EAgency_TC005" />
+					<include name="SellingApp_NewFITBooking_DrinkAddition_B2EAgency_TC004" />
+					<include name="SellingApp_NewFITBooking_DrinkAddition_B2E_TC003" />
+					<include name="SellingApp_NewFITBooking_DrinkAddition_B2EAgency_TC006" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T023">
+				<methods>
+					<include name="SellingApp_OwnerscabinDetails__B2E_TC003" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T024">
+				<methods>
+					<include name="SellingApp_AddingBookingRemarks_B2E_TC001" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T025">
+				<methods>
+					<include name="SellingApp_OverridePricesOrExtrasFromCartPage_B2E_TC023" />
+					<include name="SellingApp_OverridePricesOrExtrasFromBookingConfirmationPage_B2EAgency__TC081" />
+					<include name="SellingApp_OverridePricesOrExtrasFromBookingConfirmationPage_B2E_TC024" />
+					<include name="SellingApp_OverridePricesOrExtrasFromCartPage_B2EAgency_TC080" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T026">
+				<methods>
+					<include name="SellingApp_TransferBooking_B2E_TC008" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T028">
+				<methods>
+					<exclude name="SellingApp_NewFITBooking_FlyCruiseClasses_B2E_TC039" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T030">
+				<methods>
+					<include name="SellingApp_NewFITBooking_RemarksAllergy_B2EAgency_TC030" />
+					<include name="SellingApp_NewFITBooking_RemarksAllergy_B2E_TC006" />
+					<include name="SellingApp_NewFITBooking_RemarksAllergy_B2B_TC032" />
+					<include name="SellingApp_NewFITBooking_RemarksAllergy_TC007" />
+					<include name="SellingApp_NewFITBooking_RemarksAllergy_B2EAgency_TC031" />
+					<include name="SellingApp_NewFITBooking_RemarksAllergy_B2B_TC033" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T033">
+				<methods>
+					<include name="SellingApp_LTARemarksOnCartPage_B2E_TC015" />
+					<include name="SellingApp_LTARemarksOnConfirmationtPage_B2E_TC016" />
+					<include name="SellingApp_LTARemarks_RetrieveBooking_B2E_TC017" />
+					<include name="SellingApp_LTARemarksOnCartPage_B2EAgency_TC046" />
+					<include name="SellingApp_LTARemarksOnConfirmationtPage_B2EAgency_TC047" />
+					<include name="SellingApp_LTARemarks_RetrieveBooking_B2EAgency_TC048" />
+					<include name="SellingApp_LTARemarksOnCartPage_B2B_TC049" />
+					<include name="SellingApp_LTARemarksOnConfirmationtPage_B2B_TC050" />
+					<include name="SellingApp_LTARemarks_RetrieveBooking_B2B_TC051" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T034">
+				<methods>
+					<include name="SellingApp_NewFITBooking_QuoteCreation_ConfirmationPage_TC032" />
+					<include name="SellingApp_NewFITBooking_QuoteCreation_CartPage_TC033" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T036">
+				<methods>
+					<include name="SellingApp_NewFITBooking_RemovePassenger_B2E_TC025" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T038">
+				<methods>
+					<include name="SellingApp_NewFITBooking_ItineraryChangeAlert_TC029" />
+					<include name="SellingApp_NewFITBooking_ItineraryChangeAlert_TC030" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T039">
+				<methods>
+					<include name="SellingApp_NewFITBooking_NotesAndAlert_B2EAgency_TC082" />
+					<include name="SellingApp_NewFITBooking_NotesAndAlerts_B2E_TC031" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T041">
+				<methods>
+					<include name="SellingApp_Cruise_AddFacilities__B2EAgency_TC083" />
+					<include name="SellingApp_Cruise_AddFacilities_B2EAgency_TC084" />
+					<include name="SellingApp_NewFITBooking_Addfacility_B2E_TC038" />
+					<include name="SellingApp_NewFITBooking_Addfacility_B2B_TC085" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T048">
+				<methods>
+					<include name="SellingApp_Cruise_ItemSurpriseBooking_B2E_TC004" />
+					<include name="SellingApp_Cruise_SurpriseBookingCustomerProfile_B2E_TC007" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T083">
+				<methods>
+					<include name="SellingApp_Cruise_ExtrasRemarks_B2E_TC001" />
+				</methods>
+			</class>
+			<class name="net.focltng.testcases.ReservationGuestServices.ReservationGuestService_T125">
+				<methods>
+					<include name="SellingApp_GuestInformation_OceansDiscount_B2B_TC132" />
+					<include name="SellingApp_GuestInformation_OceansDiscount_B2E_TC133" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
